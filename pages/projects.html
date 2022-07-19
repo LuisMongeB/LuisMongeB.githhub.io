@@ -4,7 +4,7 @@
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <link href="styles.css" rel="stylesheet">
+        <link href="../styles.css" rel="stylesheet">
         <meta name="viewport" content="initial-scale=1, width=device-width">
         <title>Luis Monge</title>
         <link rel="icon" type="image/x-icon" href="/images/logo.PNG">
@@ -13,7 +13,7 @@
         <!-- Navbar-->
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
             <div class="container">
-                <a href="index.html" class="navbar-brand">Luis Monge</a>
+                <a href="../index.html" class="navbar-brand">Luis Monge</a>
 
                 <button class="navbar-toggler"
                         type="button"
@@ -39,122 +39,86 @@
             </div>
         </nav>
 
-        <!-- Showcase -->
-        <section class="top-section bg-dark text-light p-5 text-center">
+        <!-- Middle Section -->
+        <section class="projects-middle-section">
             <div class="container">
-                <div >
-                    <div>
-                        <h1>Data Science with <span class="text-warning"></span>purpose</h1>
-                        <p>Find out about my projects and why purpose is the main engine for impactful Data Science</p>
-                        <p>This website was done as the solution to the CS50 problem set 8. However, it immediately became clear that it was the best way to showcase my work. </p>
+                <div class="row row1 d-md-flex">
+                    <div class="col col1-projects py-4">
+                        <h3 class="project-titles">Get To Know Me</h3>
+                        <p>
+                            This project was born out of curiosity after I discovered I could ask Spotify for my streaming data of the past year. It also became a vehicle in which to put some of the skills that have been maturing into practice.
+                        </p>
+                        <p>
+                            Also, as the name implies, this is my way of showing you my music tastes. Hopefully you will find something you already like or discover new music :)
+                        </p>
+                        <p>
+                            In this project the following aspects were covered:
+                        </p>
+                        <ul class="project-ul">
+                            <li>Interacting with APIs</li>
+                            <li>EDA including descriptive analytics</li>
+                            <li>Basic Cosine Similarity to find similar artists</li>
+                            <li>Clustering to form pseudo-playlists</li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Middle section -->
-
-        <section class="middle-section">
-            <div class="container text-center">
-                <div class="row py-3">
-                    <h1 class="p-3 core-principles">Core principles</h1>
-                    <div class="col col1">
-                        <h3 class="homepage">Intellectual Curiosity</h3>
-                        <p class="text-justify intellectual-curiosity-paragraph">All my life I have been drawn to learn about the world around me out of curiosity. In the moment I did not do it to improve my future, get a career or give me any benefit but I have realized curiosity does something very important, it does not allow my mind to stay fixed for too long. As my favorite book says: </p>
-                        <figure>
-                            <blockquote cite="https://www.goodreads.com/quotes/351709-it-s-the-questions-we-can-t-answer-that-teach-us-the">
-                                <p>It's the questions we can't answer that teach us the most. They teach us how to think. If you give a man an answer, all he gains is a little fact. But give him a question and he'll look for his own answers.</p>
-                            </blockquote>
-                            <figcaption>—Aldous Huxley, <cite>Brave New World</cite></figcaption>
+                    <div class="col-lg col2-projects py-4 d-sm-flex">
+                        <figure class="figure d-lg-block px-4">
+                            <a href="https://github.com/LuisMongeB/Get-To-Know-Me" target="_blank">
+                                <img class="figure-img img-fluid border border-dark py-3 col-sm" src="../images/mostListenedSongs.PNG" alt="My most listened songs on spotify">
+                            </a>
+                            <figcaption class="figure-caption text-center py-2">Graph showing my most listened songs during the lockdown. Click on the image to go to the full project!</figcaption>
                         </figure>
-                        <p class="text-justify intellectual-curiosity-paragraph">Just like Kvothe, the main character, being curious has led me to look for my own answers and dive deep on knowledge about the world around me.</p>
                     </div>
-
-                    <div class="col col-growth-mindset">
-                        <h3 class="homepage">Growth Mindset</h3>
-                        <p class="text-justify growth-mindset-paragraph">It is easy to add growth mindset to a curriculum or mention it during an interview. But it is better to lead by example. </p>
-                        <p class="text-justify growth-mindset-paragraph">I was raised in an extremely singular environment which allowed me to engage in different social and intellectual realities. I had to get confortable with ambiguity and uncertainty, at first without knowing and then as a choice. In fact, it does not matter what we do and how much we plan, if we cannot be confortable with uncertainty and ambiguity we will have a hard time in this life. A growth mindset has certainly not come by coincidence in my life. In part, it has been a willful choice but it is clear how the people that have surrounded me have perhaps unintentionally stimulated it. Sometimes I'm the plant that has to water itself, but always the people around me have been a fertile forest in which to grow.</p>
-                        <p class="text-justify growth-mindset-paragraph">A growth mindset has certainly not come by coincidence in my life. It has been a very intentional choice I do every day but it is clear how the people that have surrounded me have perhaps unintentionally stimulated it. Sometimes I'm the plant that has to water itself, but always the people around me have been a fertile forest in which to grow.</p>
+                </div>
+                <div class="row row1 d-md-flex">
+                    <div class="col col1-projects py-6">
+                        <h3 class="project-titles">Compost Bin Analysis</h3>
+                        <p>This code is meant to automate the analysis of data coming from compost bins for my brother's thesis in Biosystems Engineering.</p>
+                        <p>To avoid tools like Excel for the data analysis, which can do the same operations but it's slower and Python seemed the right approach to automate it. The idea being that the raw data generated by each compost bin can be downloaded as a .csv file and given as input to main.py in order to:</p>
+                        <ul class="project-ul">
+                            <li>Clean data and export a clean csv file</li>
+                            <li>Print and save descriptive statistics about the the compost bin in a txt file</li>
+                            <li>Creating and saving plots necessary for the writing of the thesis.</li>
+                        </ul>
                     </div>
-                    <div class="col col3">
-                        <h3 class="homepage">Intentionality</h3>
-                        <p class="text-justify intentionality-paragraph">This life is too short and my mind reminds me of it constantly. For me intentionality is about <strong>being present</strong> when doing anything. It is very easy to be distracted in modern-day life and to go through life doing stuff just for doing it without purpose.</p>
-                        <p class="text-justify intentionality-paragraph">My mind tends to always be working at full speed towards my objectives, ideas and work. Sometimes in the middle of this I find myself contributing to my future by missing some of my present.</p>
-                        <p class="text-justify intentionality-paragraph">It is precisely in these moments where I am the most intentional about being in the <em>here and now.</em> Not surprising at all, this contributes to my wellbeing and to perform better at work. To have <strong>ownership</strong> about my projects and to actively listen to my colleagues and friends.</p>
+                    <div class="col-lg col2-projects py-4">
+                        <figure class="figure d-sm-flex d-lg-block">
+                            <a href="https://github.com/LuisMongeB/CompostAnalysis" target="_blank">
+                                <img class="figure-img img-fluid" src="../images/example_graph.png" alt="Humidity over time">
+                            </a>
+                            <figcaption class="figure-caption text-center">Graph showing humity readings over time. Click on the image to go to the full project!</figcaption>
+                        </figure>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Question Accordion -->
-        <div class="container pb-5">
-            <div class="accordion" id="questions">
-                <!-- First item -->
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    <strong>How old am I?</strong>
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#questions">
-                    <div class="accordion-body">
-                    I am 24 years old. A weird hybrid between Millenial and Gen-Z. I got to have all my childhood and part of my adolescence without smartphones and social media. Until I got to highschool and some magical app called Facebook got everyone's attention :)
-                    </div>
-                </div>
-                </div>
-                <!-- Second item -->
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <strong>What do you do in your spare time?</strong>
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#questions">
-                    <div class="accordion-body">
-                        You will often see me playing guitar, reading and hanging out with my friends. I code with <strong><em>Python and learn about Statistics, Machine Learning, Software Engineering </em></strong>on a regular basis.
-                    </div>
-                </div>
-                </div>
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <strong>What is your favorite thing about living abroad?</strong>
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#questions">
-                    <div class="accordion-body">
-                        There are way too many aspects that make living abroad great for me. For starters, living in Bologna (with its diverse and international student population) has allowed me to meet people from every corner of the planet. On a daily basis I get to speak between 3 and 4 languages as opposed to just Spanish back in Costa Rica. As for the Italy specific aspects, I absolutely love to wake up in the morning and go read at a bar with a cornetto and a cappuccino! If I can start my day like this, I have time to mentally prepare for anything that gets thrown at me.
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
 
         <!-- Footer -->
         <!-- Reference: https://mdbootstrap.com/docs/standard/navigation/footer/-->
+        <!-- Footer -->
         <footer class="text-center text-lg-start bg-light text-muted">
             <!-- Section: Social media -->
             <div
             class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
             >
-            <!-- Left -->
-            <div class="me-5 d-none d-lg-block">
-                <span><strong>Connect with me: </strong></span>
-            </div>
-            <!-- Left -->
-            <div class="justify-content-start d-flex bd-highlight mb-3">
-                <a href="https://www.linkedin.com/in/luis-diego-monge-bolanos/" target=”_blank class="me-4 text-reset">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 20 20">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block d-sm-flex">
+                    <span><strong>Connect with me: </strong></span>
+                </div>
+                <!-- Left -->
+                <div class="justify-content-start d-flex bd-highlight mb-3">
+                    <a href="https://www.linkedin.com/in/luis-diego-monge-bolanos/" class="me-4 text-reset">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 20 20">
                         <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                    </svg>
-                </a>
-                <a href="https://github.com/LuisMongeB" target=”_blank class="me-4 text-reset">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github " viewBox="0 0 20 20">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                </a>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/LuisMongeB" class="me-4 text-reset">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github " viewBox="0 0 20 20">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
-        </div>
         </footer>
         <!-- Footer -->
     </body>
