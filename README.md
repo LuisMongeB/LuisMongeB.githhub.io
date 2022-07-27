@@ -7,3 +7,5 @@ This website is my first experience building a with HTML, CSS and JS. I did not 
 This provided me with an opportunity to tell you a little bit more about me while at the same time putting newfound skills into practice. I'm sure it is not anywhere near a perfect website but I am very happy with result.
 
 If you want to visit the website [click here!](https://luismongeb.github.io/LuisMongeB.githhub.io/)
+
+EDIT: CS50's Week 9 lecture is about Flask so hopefully I will be able to recreate this website with it as soon as I have some time. 
