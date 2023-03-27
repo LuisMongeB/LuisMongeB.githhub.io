@@ -1,4 +1,4 @@
-# Luis Monge's Website
+# Personal Website 
 As part of the coursework for CS50: Introduction to Computer Science I created a website using HTML, CSS, JS aided by Bootstrap 5. Here you can get to know me a little bit better :) 
 
 
